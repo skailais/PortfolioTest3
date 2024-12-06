@@ -1,0 +1,262 @@
+/* GLOBAL ATRIBUTES START */
+
+body {
+  margin: 0;
+  background-color: #21242b;
+}
+
+body::after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+
+h1 {
+  color: #fffdf5;
+  font-size: 26px;
+  line-height: 32px;
+  font-family: "Funnel Sans", sans-serif;
+  font-weight: 600;
+}
+
+h2 {
+  color: #a4a4ac;
+  font-size: 26px;
+  line-height: 32px;
+  font-family: "Funnel Sans", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+h3 {
+  color: #a4a4ac;
+  font-size: 20px;
+  line-height: 32px;
+  font-family: "Funnel Sans", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+p {
+  color: #a4a4ac;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Funnel Sans", sans-serif;
+}
+
+a {
+  color: #a4a4ac;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Funnel Sans", sans-serif;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* GLOBAL ATRIBUTES END */
+
+/* HEADER START */
+
+.header-main {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  /* background-color: #21242b; */
+  display: flex;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+.header-main-nav {
+  padding-left: 100px;
+  width: fit-content;
+  height: 100%;
+}
+
+.header-main-nav ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+  margin-left: 30px;
+}
+
+.header-main-nav ul li {
+  margin: 0 10px;
+  display: inline;
+  float: left;
+}
+
+.header-main-nav ul a {
+  color: #a4a4ac;
+  padding: 0 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 60px;
+  font-weight: 600;
+  display: block;
+  height: 100%;
+}
+
+.header-main-nav ul a:hover {
+  color: rgb(145, 143, 140);
+}
+
+.header-main-sm {
+  width: fit-content;
+  height: 100%;
+
+  padding-right: 60px;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.header-main-sm-fb {
+  color: #717277;
+  width: 30px;
+  height: 30px;
+}
+
+.header-main-sm-fb:hover {
+  color: rgb(145, 143, 140);
+}
+
+.header-main-sm-in {
+  color: #717277;
+  width: 30px;
+  height: 30px;
+}
+
+.header-main-sm-in:hover {
+  color: rgb(140, 140, 145);
+}
+
+/* HEADER END */
+
+/* MAIN START PAGE */
+
+main {
+  width: 100%;
+  height: calc(100vh - 60px);
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main h1 {
+  font-size: 50px;
+  line-height: 60px;
+}
+
+main p {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.main-index-me div {
+  border-bottom: 2px solid #38383a;
+}
+
+.main-index-intro {
+  position: relative;
+  right: 30vh;
+}
+
+.main-index-me {
+  position: relative;
+  left: 30vh;
+}
+
+.main-index-me a {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  font-size: 16px;
+  display: block;
+  border: 2px solid black;
+  padding: 10px 20px;
+  width: fit-content;
+  text-transform: uppercase;
+}
+
+.main-index-me button,
+.main-index-intro button {
+  color: #a4a4ac;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  font-size: 16px;
+  display: block;
+  border: 2px solid black;
+  padding: 10px 20px;
+  width: fit-content;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.main-index-me h3 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.topline {
+  width: 200px;
+  height: 4px;
+  background-color: #417aff;
+  position: absolute;
+  top: -40px;
+}
+
+/* MAIN END PAGE */
+
+/* SWIPER START */
+.swiper {
+  position: absolute;
+  left: 55vw;
+  width: 630px;
+  height: 610px;
+  z-index: 100;
+}
+
+.swiper-slide {
+  margin-left: 120px;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.index-category-box {
+  width: 210px;
+  height: 300px;
+  background-color: #111;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.index-category-box:nth-child(1) {
+  background-image: url(https://picsum.photos/310/430?random=1);
+}
+.index-category-box:nth-child(2) {
+  background-image: url(https://picsum.photos/310/430?random=2);
+}
+.index-category-box:nth-child(3) {
+  background-image: url(https://picsum.photos/310/430?random=3);
+}
+.index-category-box:nth-child(4) {
+  background-image: url(https://picsum.photos/310/430?random=4);
+}
+/* SWIPER END */
+/* HEADER END */
+/* HEADER END */
