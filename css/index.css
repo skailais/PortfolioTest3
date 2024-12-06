@@ -234,6 +234,7 @@ main p {
   align-items: center;
   gap: 20px;
   flex-wrap: wrap;
+  opacity: 0;
 }
 
 .index-category-box {
