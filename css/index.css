@@ -161,7 +161,8 @@ main p {
   line-height: 30px;
 }
 
-.main-index-me div {
+.main-index-me-about,
+.main-index-me-work {
   border-bottom: 2px solid #38383a;
 }
 
@@ -175,7 +176,7 @@ main p {
   left: 30vh;
 }
 
-.main-index-me a {
+/* .main-index-me a {
   margin-top: 30px;
   margin-bottom: 50px;
   font-size: 16px;
@@ -184,7 +185,7 @@ main p {
   padding: 10px 20px;
   width: fit-content;
   text-transform: uppercase;
-}
+} */
 
 .main-index-me button,
 .main-index-intro button {
@@ -200,6 +201,10 @@ main p {
   width: fit-content;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+button:hover {
+  border-color: #717277;
 }
 
 .main-index-me h3 {
@@ -219,22 +224,19 @@ main p {
 
 /* SWIPER START */
 .swiper {
-  position: absolute;
-  left: 55vw;
   width: 630px;
   height: 610px;
   z-index: 2;
 }
 
 .swiper-slide {
-  margin-left: 120px;
-  width: 70%;
+  /* margin-left: 120px; */
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
   flex-wrap: wrap;
-  opacity: 0;
 }
 
 .index-category-box {
@@ -249,18 +251,55 @@ main p {
   position: relative;
 }
 
-.index-category-box:nth-child(1) {
+.box-1:nth-child(1) {
   background-image: url(https://picsum.photos/310/430?random=1);
 }
-.index-category-box:nth-child(2) {
+.box-1:nth-child(2) {
   background-image: url(https://picsum.photos/310/430?random=2);
 }
-.index-category-box:nth-child(3) {
+.box-1:nth-child(3) {
   background-image: url(https://picsum.photos/310/430?random=3);
 }
-.index-category-box:nth-child(4) {
+.box-1:nth-child(4) {
   background-image: url(https://picsum.photos/310/430?random=4);
 }
+.box-2:nth-child(1) {
+  background-image: url(https://picsum.photos/310/430?random=5);
+}
+.box-2:nth-child(2) {
+  background-image: url(https://picsum.photos/310/430?random=6);
+}
+.box-2:nth-child(3) {
+  background-image: url(https://picsum.photos/310/430?random=7);
+}
+.box-2:nth-child(4) {
+  background-image: url(https://picsum.photos/310/430?random=8);
+}
+.box-3:nth-child(1) {
+  background-image: url(https://picsum.photos/310/430?random=9);
+}
+.box-3:nth-child(2) {
+  background-image: url(https://picsum.photos/310/430?random=10);
+}
+.box-3:nth-child(3) {
+  background-image: url(https://picsum.photos/310/430?random=11);
+}
+.box-3:nth-child(4) {
+  background-image: url(https://picsum.photos/310/430?random=12);
+}
+.box-4:nth-child(1) {
+  background-image: url(https://picsum.photos/310/430?random=13);
+}
+.box-4:nth-child(2) {
+  background-image: url(https://picsum.photos/310/430?random=14);
+}
+.box-4:nth-child(3) {
+  background-image: url(https://picsum.photos/310/430?random=15);
+}
+.box-4:nth-child(4) {
+  background-image: url(https://picsum.photos/310/430?random=16);
+}
+
 /* SWIPER END */
 /* LOADER START */
 

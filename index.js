@@ -58,7 +58,7 @@ const portfolioBtn = $(".portfolioBtn");
 const aboutBtn = $(".aboutBtn");
 const returnHomeBtn = $(".returnHomeBtn");
 // Container Variables
-const mainIndexMe = $(".main-index-me");
+const mainIndexMe = $(".main-index-me-about, .main-index-me-work");
 const swipero = $(".swiper");
 const badBox = $(".bad-container");
 const introHead = $(".main-index-intro-head");
@@ -74,16 +74,44 @@ aboutHead.hide();
 aboutText.hide();
 swipero.hide();
 returnHomeBtn.hide();
+// gsap.to(swipero, 1, {
+//   delay: 0.35,
+//   autoAlpha: 0,
+// });
 
 // Show the great form and hide the rating container
 portfolioBtn.click(() => {
+  // gsap.to(mainIndexMe, 1, {
+  //   delay: 0.3,
+  //   x: 700,
+  //   stagger: { amount: 0.5 },
+  //   ease: "power4.inOut",
+  //   autoAlpha: 0,
+  // });
+  // gsap.to(introHead, 1, {
+  //   delay: 0.3,
+  //   x: -700,
+  //   stagger: { amount: 0.5 },
+  //   ease: "power4.inOut",
+  //   autoAlpha: 0,
+  // });
+  // gsap.to(introText, 1, {
+  //   delay: 0.35,
+  //   x: -700,
+  //   stagger: { amount: 0.5 },
+  //   ease: "power4.inOut",
+  //   autoAlpha: 0,
+  // });
   mainIndexMe.hide();
-  swipero.show();
   introHead.hide();
   introText.hide();
   portfolioHead.show();
   portfolioText.show();
-
+  swipero.show();
+  // gsap.to(swipero, 1, {
+  //   delay: 0.35,
+  //   autoAlpha: 100,
+  // });
   aboutHead.hide();
   aboutText.hide();
   returnHomeBtn.show();
